@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Company Progress Bars</title>
+<style>
+    .progress-container {
+        width: 80%;
+        margin: 20px auto;
+        position: relative; /* Added for positioning the y-axis line */
+    }
+
+    .progress-bar {
+        height: 30px;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .progress {
+        height: 100%;
+        line-height: 30px;
+        text-align: center;
+        color: white;
+        border-radius: 5px;
+    }
+
+    /* Different colors for different companies */
+    .progress-bar-company1 { background-color: #4CAF50; }
+    .progress-bar-company2 { background-color: #f321ec; }
+    .progress-bar-company3 { background-color: #f44336; }
+    .progress-bar-company4 { background-color: #c3b123; }
+    .progress-bar-company5 { background-color: #9bab1d; }
+    .progress-bar-company6 { background-color: #8298a3; }
+    .progress-bar-company7 { background-color: #b323c3; }
+    .progress-bar-company8 { background-color: #140a09; }
+
+    /* X-axis line */
+    .axis-line-x {
+        width: 100%;
+        height: 1px;
+        background-color: black;
+        position: absolute;
+        bottom: 0;
+    }
+
+    /* Y-axis line */
+    .axis-line-y {
+        width: 1px;
+        height: calc(100% - 30px);
+        background-color: black;
+        position: absolute;
+        top: 0;
+    }
+</style>
+</head>
+<body>
+
+<div class="progress-container">
+    <div class="axis-line-x"></div> <!-- X-axis line -->
+    <div class="progress-bar progress-bar-company1" style="width: 60%">
+        <div class="progress">Company 1: 60%</div>
+    </div>
+</div>
+
+<div class="progress-container">
+    <div class="axis-line-x"></div> <!-- X-axis line -->
+    <div class="progress-bar progress-bar-company2" style="width: 80%">
+        <div class="progress">Company 2: 80%</div>
+    </div>
+</div>
+
+<div class="progress-container">
+    <div class="axis-line-x"></div> <!-- X-axis line -->
+    <div class="progress-bar progress-bar-company3" style="width: 40%">
+        <div class="progress">Company 3: 40%</div>
+    </div>
+</div>
+
+<div class="progress-container">
+    <div class="axis-line-x"></div> <!-- X-axis line -->
+    <div class="progress-bar progress-bar-company4" style="width: 45%">
+        <div class="progress">Company 4: 45%</div>
+    </div>
+</div>
+
+<div class="progress-container">
+    <div class="axis-line-x"></div> <!-- X-axis line -->
+    <div class="progress-bar progress-bar-company5" style="width: 100%">
+        <div class="progress">Company 5: 100%</div>
+    </div>
+</div>
+
+<div class="progress-container">
+    <div class="axis-line-x"></div> <!-- X-axis line -->
+    <div class="progress-bar progress-bar-company6" style="width: 68%">
+        <div class="progress">Company 6: 68%</div>
+    </div>
+</div>
+
+<div class="progress-container">
+    <div class="axis-line-x"></div> <!-- X-axis line -->
+    <div class="progress-bar progress-bar-company7" style="width: 90%">
+        <div class="progress">Company 7: 90%</div>
+    </div>
+</div>
+
+</body>
+</html>
